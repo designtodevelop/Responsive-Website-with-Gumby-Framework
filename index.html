@@ -13,7 +13,7 @@
 			 More info: h5bp.com/b/378 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Gumby - A Flexible, Responsive CSS Framework - Powered by SASS</title>
+	<title>Responsive Website with Gumby Framework</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="humans.txt">
@@ -43,9 +43,143 @@
 
 <body>
 
+	<!-- Start of Header & Navigation -->
+	<div class="navbar">
+		<header class="row" id="navigation">
+			<h1 class="four columns"><a href="#">Gumby Framework</a></h1>
+			<a class="toggle" gumby-trigger="#navigation > nav > ul" href="#"><i class="icon-menu"></i></a>
+			<nav class="eight columns">
+				<ul class="main-menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Home</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<!-- End of Header & Navigation -->
+	
+	<!-- Start of Banner -->
+	<div class="banner">
+		<div class="row">
+			<h2>Gumby Framework is awesome!</h2>
+			<p>Cras porttitor leo quis ipsum pharetra lobortis. Praesent mattis sapien in tellus condimentum pretium.<p>
+			<div class="medium secondary btn"><a href="#">Secondary</a></div>
+		</div>
+	</div>
+	<!-- End of Banner -->
 
+	<!-- Start of Feature List -->
+	<section class="row">
+		<h2>Features</h2>
+		<article>
+			<div class="feature-item">
+				<div class="feature-icon">
+					<i class=""></i>
+				</div>
+				<h3>Latest Features</h3>
+				<p>In laoreet vehicula consequat. Sed laoreet pharetra nibh, et vulputate risus elementum in.</p>
+			</div>
+		</article>
+		<article>
+			<div class="feature-item">
+				<div class="feature-icon">
+					<i class=""></i>
+				</div>
+				<h3>Latest Features</h3>
+				<p>In laoreet vehicula consequat. Sed laoreet pharetra nibh, et vulputate risus elementum in.</p>
+			</div>
+		</article>
+		<article>
+			<div class="feature-item">
+				<div class="feature-icon">
+					<i class=""></i>
+				</div>
+				<h3>Latest Features</h3>
+				<p>In laoreet vehicula consequat. Sed laoreet pharetra nibh, et vulputate risus elementum in.</p>
+			</div>
+		</article>
+		<article>
+			<div class="feature-item">
+				<div class="feature-icon">
+					<i class=""></i>
+				</div>
+				<h3>Latest Features</h3>
+				<p>In laoreet vehicula consequat. Sed laoreet pharetra nibh, et vulputate risus elementum in.</p>
+			</div>
+		</article>
+	</section>
+	<!-- End of Feature List -->
 
+	<!-- Start of Feature Item 1 -->
+	<section class="row">
+		<div class="">
+			<img src="" alt="" />
+		</div>
+		<div class="">
+			<h3>Latest Features</h3>
+			<p>Etiam viverra pharetra orci, sed tempus enim hendrerit vitae. Vestibulum placerat, tellus ut molestie aliquam, mauris nibh imperdiet dolor, ac sodales tellus nisi in justo. Morbi porttitor ante nec turpis bibendum, at porta neque ultricies.</p>
+		</div>
+	</section>
+	<!-- End of Feature Item 1 -->
 
+	<!-- Start of Feature Item 2 -->
+	<section class="row">
+		<div class="">
+			<img src="" alt="" />
+		</div>
+		<div class="">
+			<h3>Latest Features</h3>
+			<p>Etiam viverra pharetra orci, sed tempus enim hendrerit vitae. Vestibulum placerat, tellus ut molestie aliquam, mauris nibh imperdiet dolor, ac sodales tellus nisi in justo. Morbi porttitor ante nec turpis bibendum, at porta neque ultricies.</p>
+		</div>
+	</section>
+	<!-- End of Feature Item 2 -->
+
+	<!-- Start of Feature Item 3 -->
+	<section class="row">
+		<div class="">
+			<img src="" alt="" />
+		</div>
+		<div class="">
+			<h3>Latest Features</h3>
+			<p>Etiam viverra pharetra orci, sed tempus enim hendrerit vitae. Vestibulum placerat, tellus ut molestie aliquam, mauris nibh imperdiet dolor, ac sodales tellus nisi in justo. Morbi porttitor ante nec turpis bibendum, at porta neque ultricies.</p>
+		</div>
+	</section>
+	<!-- Start of Feature Item 3 -->
+
+	<!-- Start of Contact Form -->
+	<section class="row">
+		<form>
+			<div class="field">
+				<input class="input text" type="text" name="name" placeholder="Enter Your Name" />
+			</div>
+			<div class="field">
+				<input class="input text" type="email" name="email" placeholder="Enter Your Name" />
+			</div>
+			<div class="field">
+				<textarea class="input textarea" placeholder="Your Message" ></textarea>
+			</div>
+			<div class="btn primary medium">
+				<input type="submit" value="Submit" />
+			</div>
+		</form>
+	</section>
+	<!-- End of Contact Form -->
+
+	<!-- Start of Footer -->
+	<footer>
+		<div class="socail-icons">
+			<ul>
+				<li><a href="#" class=""><i class=""></i></a></li>
+				<li><a href="#" class=""><i class=""></i></a></li>
+				<li><a href="#" class=""><i class=""></i></a></li>
+				<li><a href="#" class=""><i class=""></i></a></li>
+			</ul>
+		</div>
+	</footer>
+	<!-- Start of Footer -->
 
 	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
 	<!-- 2.0 for modern browsers, 1.10 for .oldie -->
@@ -67,9 +201,24 @@
 	}
 	</script>
 
+<!--
+	Include gumby.js followed by UI modules followed by gumby.init.js
+	Or concatenate and minify into a single file -->
+	<script gumby-touch="js/libs" src="bower_components/gumby/js/libs/gumby.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.retina.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.fixed.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.skiplink.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.toggleswitch.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.checkbox.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.radiobtn.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.tabs.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.navbar.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/jquery.validation.js"></script>
+	<script src="bower_components/gumby/js/libs/gumby.init.js"></script>
+
 	<!--
-	gumby.min.js contains gumby.js, all UI modules and gumby.init.js-->
-	<script src="js/libs/gumby.min.js"></script> 
+	gumby.min.js contains gumby.js, all UI modules and gumby.init.js
+	<script src="js/libs/gumby.min.js"></script> -->
 	<script src="bower_components/gumby/js/plugins.js"></script>
 	<script src="bower_components/gumby/js/main.js"></script>
 
