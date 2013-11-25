@@ -1,6 +1,9 @@
 // Your custom SCSS should be written here...
+#navigation {
+	height: 60px;
+}
 h1 {
-	font-size: 2em;
+	font-size: $larger;
 	font-weight: $font-weight-bold;
 	a {
 		color: $white;
@@ -55,7 +58,7 @@ ul {
 }
 .feature-icon i {
 	display: block;
-	font-size: 4em;
+	font-size: $xxxlarge;
 }
 .feature-item {
 	padding: 30px 0;
@@ -65,6 +68,19 @@ ul {
 	h3 {
 		font-size: $large;
 		font-weight: $font-weight-bold;
+	}
+	p {
+		@include respond(portrait-tablets) {
+		text-align: center; 
+		}	
+	} 
+	@include respond(portrait-tablets) {
+		text-align: center; 
+	}
+}
+.valign > div {
+	@include respond(portrait-tablets) {
+	    display: block;
 	}
 }
 .contact-form {
@@ -79,7 +95,15 @@ ul {
 footer {
 	padding: 10px 0;
 	background-color: $navbar-color;
-	ul li {
-		display: inline-block; 
+	ul {
+		@include fancytiles(4,4,3);
+	}
+	li a {
+		@include respond(all-phones) { 
+	   		@include font-size(13px);
+	  }
+	  i[class^="icon-"] {
+	  		margin:0;
+	  }
 	}
 }

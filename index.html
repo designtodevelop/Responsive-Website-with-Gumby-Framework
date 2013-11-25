@@ -44,20 +44,30 @@
 <body>
 
 	<!-- Start of Header & Navigation -->
-	<div class="navbar">
-		<header class="row" id="navigation">
-			<h1 class="five columns"><a href="#">Gumby Framework</a></h1>
-			<a class="toggle" gumby-trigger="#navigation > nav > ul" href="#"><i class="icon-menu"></i></a>
-			<nav class="seven columns">
-				<ul class="main-menu">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Home</a></li>
-				</ul>
-			</nav>
-		</header>
+	<div id="navigation">
+		<div class="navbar" gumby-fixed="top">
+			<header class="row">
+				<h1 class="five columns"><a href="#">Gumby Framework</a></h1>
+				<a class="toggle" gumby-trigger="header > nav > ul" href="#"><i class="icon-menu"></i></a>
+				<nav class="seven columns">
+					<ul class="main-menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Framework</a>
+							<div class="dropdown">
+								<ul>
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Camera</a></li>
+									<li><a href="#">Security</a></li>
+									<li><a href="#">Compass</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
 	</div>
 	<!-- End of Header & Navigation -->
 	
@@ -172,11 +182,29 @@
 	<!-- Start of Footer -->
 	<footer>
 		<div class="row">
-			<ul class="footer-menu six columns centered">
+			<ul class="footer-menu">
 				<li><a href="#">Facebook <i class="icon-facebook-squared"></i></a></li>
 				<li><a href="#">Twitter <i class="icon-twitter"></i></a></li>
 				<li><a href="#">Google+ <i class="icon-gplus"></i></a></li>
 				<li><a href="#">GitHub <i class="icon-github"></i></a></li>
+			</ul>
+			<ul class="footer-menu">
+				<li><a href="#">Flickr <i class="icon-flickr"></i></a></li>
+				<li><a href="#">Vimeo <i class="icon-vimeo"></i></a></li>
+				<li><a href="#">Pinterest <i class="icon-pinterest"></i></a></li>
+				<li><a href="#">Tumblr <i class="icon-tumblr"></i></a></li>
+			</ul>
+			<ul class="footer-menu">
+				<li><a href="#">Linkedin <i class="icon-linkedin"></i></a></li>
+				<li><a href="#">dribbble <i class="icon-dribbble"></i></a></li>
+				<li><a href="#">Lastfm <i class="icon-lastfm"></i></a></li>
+				<li><a href="#">Rdio <i class="icon-rdio"></i></a></li>
+			</ul>
+			<ul class="footer-menu">
+				<li><a href="#">Spotify <i class="icon-spotify"></i></a></li>
+				<li><a href="#">Instagram <i class="icon-instagram"></i></a></li>
+				<li><a href="#">Skype <i class="icon-skype"></i></a></li>
+				<li><a href="#">Picasa <i class="icon-picasa"></i></a></li>
 			</ul>
 		</div>
 	</footer>
@@ -202,27 +230,11 @@
 	}
 	</script>
 
-<!--
-	Include gumby.js followed by UI modules followed by gumby.init.js
-	Or concatenate and minify into a single file -->
-	<script gumby-touch="js/libs" src="bower_components/gumby/js/libs/gumby.js"></script>
-	<script src="bower_components/gumby/js/libs/ui/gumby.retina.js"></script>
-	<script src="bower_components/gumby/js/libs/ui/gumby.fixed.js"></script>
-	<script src="bower_components/gumby/js/libs/ui/gumby.skiplink.js"></script>
-	<script src="bower_components/gumby/js/libs/ui/gumby.toggleswitch.js"></script>
-	<script src="bower_components/gumby/js/libs/ui/gumby.checkbox.js"></script>
-	<script src="bower_components/gumby/js/libs/ui/gumby.radiobtn.js"></script>
-	<script src="bower_components/gumby/js/libs/ui/gumby.tabs.js"></script>
-	<script src="bower_components/gumby/js/libs/ui/gumby.navbar.js"></script>
-	<script src="bower_components/gumby/js/libs/ui/jquery.validation.js"></script>
-	<script src="bower_components/gumby/js/libs/gumby.init.js"></script>
-
 	<!--
-	gumby.min.js contains gumby.js, all UI modules and gumby.init.js
-	<script src="js/libs/gumby.min.js"></script> -->
+	gumby.min.js contains gumby.js, all UI modules and gumby.init.js-->
+	<script src="js/gumby.min.js"></script> 
 	<script src="bower_components/gumby/js/plugins.js"></script>
-	<script src="bower_components/gumby/js/main.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="js/main.js"></script>
 
 	<!-- Change UA-XXXXX-X to be your site's ID -->
 	<!--<script>

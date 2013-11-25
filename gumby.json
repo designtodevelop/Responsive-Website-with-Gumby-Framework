@@ -1,6 +1,13 @@
 {
 	"build": {
 		"gumbyPath": "bower_components/gumby",
-		"outPath": "js"
+		"outPath": "js",
+		"modules":	[
+			"fixed",
+			"skiplink",
+			"toggleswitch",
+			"navbar",
+			"jquery.validation"
+		]
 	}
 }
